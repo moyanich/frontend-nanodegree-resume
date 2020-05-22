@@ -4,6 +4,7 @@ funThouhgts = funThouhgts.replace("AWESOME", "FUN");
 $("#main").append(funThouhgts);
 */
 
+/*
 var myName = "Lucy Newman";
 var myRole = "Web Master";
 var skills = ["HTML", "CSS", "Python"];
@@ -15,13 +16,68 @@ skills = HTMLskills.replace("%data%", skills);
 
 $("#header").prepend(formattedRole);
 $("#header").prepend(formattedName);
-$("#workExperience").append(skills[1]);
+$("#workExperience").append(skills[0]);
+*/
+
+var intro = {};
+intro.name = "Lucy Newman";
+
+var formattedName = HTMLheaderName.replace("%data%", intro.name);
+$("#header").prepend(formattedName);
+
+
+var workObj = {};
+workObj.position = "Web Master";
+workObj.employer = "JBDC";
+
+var position = HTMLworkEmployer.replace("%data%", workObj.employer);
+var employer = HTMLworkTitle.replace("%data%", workObj.position);
+
+$("#workExperience").append(employer);
+$("#workExperience").append(position);
+
+/*
 
 
 
 
 
+$("#workExperience").append(employer);
+$("#workExperience").append(position);
 
+
+//$("#workExperience").append(workObj[employer]);
+*/
+
+
+
+
+
+// Creating an object using object literal notation
+/*
+var bio = {
+  "name" : "Lucy Newman",
+  "age" : 32,
+  "role" : "Web Master",
+  "contact" : {
+    "tel" : "888-555-6645",
+    "email" : "me@mail.com"
+  },
+  "welcomeMessage" : "Faith in love",
+  "skills" : ["HTML", "CSS", "Python"],
+  "pic" : "images/fry.jpg"
+
+}
+
+$("#header").append(bio.name);
+$("#header").append(bio.age);
+$("#header").append(bio.role);
+$("#header").append(bio.contact.tel);
+*/
+
+
+
+/*
 var text = "audacity";
 
 var udacityizer = function(string) {
@@ -39,7 +95,6 @@ var udacityizer = function(string) {
 
 // Did your code work? The line below will tell you!
 console.log(udacityizer(text));
-
 
 var sampleArray = [0,0,7];
 
@@ -61,14 +116,13 @@ var incrementLastArrayElement = function(_array) {
 
     newArray.push(removeNum + 1);
 
-
    //	newArray = newArray.push("1");
 
-    
-    
     // Don't delete this line!
     return newArray;
 };
 
 // Did your code work? The line below will tell you!
 console.log(incrementLastArrayElement(sampleArray));
+
+*/
