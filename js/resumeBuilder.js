@@ -20,14 +20,14 @@ var bio = {
 var education = { 
 	"schools" : [
 		{
-			"name": "UCC",
-			"city": "Kingston",
+			"name": "Universitie",
+			"city": "Paris",
 			"degree": "BSC",
 			"major": "I.T."
 		},
 		{
-			"name": "UCC",
-			"city": "Kingston",
+			"name": "University",
+			"city": "Paris",
 			"degree": "BSC",
 			"major": "I.T."
 		}
