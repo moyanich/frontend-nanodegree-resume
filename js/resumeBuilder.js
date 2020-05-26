@@ -9,7 +9,7 @@ var bio = {
 			"email" : "me@mail.com",
 			"github" : "me@github.com",
 			"twitter": "me@twitter.com",
-			"location": "Jamaica"
+			"location": "France"
 			}
 
 		],
@@ -47,16 +47,16 @@ var education = {
 var work = { 
 	"jobs" : [
 		{
-			"employer": "JBDC",
+			"employer": "J Turn",
 			"title": "Web Master",
-			"location": "Kingston",
+			"location": "Paris",
 			"dates": "2018-25-05",
 			"description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer aliquet leo augue. Vivamus non lectus tellus. Etiam iaculis velit nec risus sollicitudin, sit amet sagittis ipsum eleifend. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed lectus velit, porta vitae libero ac, gravida tristique purus. Ut dui tellus, pellentesque a euismod at, consectetur a dolor. Nulla quis blandit quam. Ut quis mauris feugiat magna lobortis pulvinar ac vel libero."
 		},
 		{
-			"employer": "Chrysalis",
+			"employer": "Butterfly Inc",
 			"title": "Web Developer",
-			"location": "Kingston",
+			"location": "Tehron",
 			"dates": "2016-04-25",
 			"description" : "Nulla at imperdiet lacus. Proin eget rhoncus augue. Ut semper, justo vel tempus mollis, augue elit luctus est, quis tristique lorem lacus quis est. Nunc eget dictum erat, at pulvinar nibh. Morbi lacinia lacus nec mollis suscipit. Pellentesque faucibus a mi eget tincidunt. Nullam facilisis, lectus vitae blandit lacinia, lectus nunc bibendum quam, vel accumsan leo nisi eget nulla. Praesent ac dolor velit. Curabitur libero dui, tincidunt vitae est ac, sodales efficitur odio. Ut venenatis porttitor elit ac aliquet. Mauris euismod faucibus auctor. Vestibulum lacus orci, tempus et enim ut, ornare malesuada urna. Curabitur sit amet risus aliquet, facilisis mi eu, aliquam nibh. Mauris pharetra mattis vehicula."
 		}
