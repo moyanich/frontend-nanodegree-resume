@@ -1,128 +1,161 @@
-/* var myName = "Lucy";
-var funThouhgts = "my name is " + myName  + " and I AM AWESOME";
-funThouhgts = funThouhgts.replace("AWESOME", "FUN"); 
-$("#main").append(funThouhgts);
-*/
+var bio = { 
+		"name": "Moya",
+		"role": "Web Master",
+		"welcomeMessage": "Faith in love",
+		"biopic": "images/fry.jpg",
+		"contacts" : [
+			{
+			"mobile" : "888-555-6645",
+			"email" : "me@mail.com",
+			"github" : "me@github.com",
+			"twitter": "me@twitter.com",
+			"location": "Jamaica"
+			}
 
-/*
-var myName = "Lucy Newman";
-var myRole = "Web Master";
-var skills = ["HTML", "CSS", "Python"];
-
-var formattedRole = HTMLheaderRole.replace("%data%", myRole);
-var formattedName = HTMLheaderName.replace("%data%", myName);
-skills = HTMLskills.replace("%data%", skills);
-
-
-$("#header").prepend(formattedRole);
-$("#header").prepend(formattedName);
-$("#workExperience").append(skills[0]);
-*/
-
-var intro = {};
-intro.name = "Lucy Newman";
-
-var formattedName = HTMLheaderName.replace("%data%", intro.name);
-$("#header").prepend(formattedName);
-
-
-var workObj = {};
-workObj.position = "Web Master";
-workObj.employer = "JBDC";
-
-var position = HTMLworkEmployer.replace("%data%", workObj.employer);
-var employer = HTMLworkTitle.replace("%data%", workObj.position);
-
-$("#workExperience").append(employer);
-$("#workExperience").append(position);
-
-/*
-
-
-
-
-
-$("#workExperience").append(employer);
-$("#workExperience").append(position);
-
-
-//$("#workExperience").append(workObj[employer]);
-*/
-
-
-
-
-
-// Creating an object using object literal notation
-/*
-var bio = {
-  "name" : "Lucy Newman",
-  "age" : 32,
-  "role" : "Web Master",
-  "contact" : {
-    "tel" : "888-555-6645",
-    "email" : "me@mail.com"
-  },
-  "welcomeMessage" : "Faith in love",
-  "skills" : ["HTML", "CSS", "Python"],
-  "pic" : "images/fry.jpg"
-
+		],
+		"skills" : ["HTML", "CSS", "Python"],
+		"contacts" : ""
 }
 
-$("#header").append(bio.name);
-$("#header").append(bio.age);
-$("#header").append(bio.role);
-$("#header").append(bio.contact.tel);
-*/
+var education = { 
+	"schools" : [
+		{
+			"name": "UCC",
+			"city": "Kingston",
+			"degree": "BSC",
+			"major": "I.T."
+		},
+		{
+			"name": "UCC",
+			"city": "Kingston",
+			"degree": "BSC",
+			"major": "I.T."
+		}
+	],
+
+	"onlineCourses" : [
+		{
+			"title": "Javascript",
+			"school" : "Udacity",
+			"dates": "2020-05-25",
+			"url": "www.udacity.com"
+		}
+	]
+}
+
+
+var work = { 
+	"jobs" : [
+		{
+			"employer": "JBDC",
+			"title": "Web Master",
+			"location": "Kingston",
+			"dates": "2018-25-05",
+			"description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer aliquet leo augue. Vivamus non lectus tellus. Etiam iaculis velit nec risus sollicitudin, sit amet sagittis ipsum eleifend. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed lectus velit, porta vitae libero ac, gravida tristique purus. Ut dui tellus, pellentesque a euismod at, consectetur a dolor. Nulla quis blandit quam. Ut quis mauris feugiat magna lobortis pulvinar ac vel libero."
+		},
+		{
+			"employer": "Chrysalis",
+			"title": "Web Developer",
+			"location": "Kingston",
+			"dates": "2016-04-25",
+			"description" : "Nulla at imperdiet lacus. Proin eget rhoncus augue. Ut semper, justo vel tempus mollis, augue elit luctus est, quis tristique lorem lacus quis est. Nunc eget dictum erat, at pulvinar nibh. Morbi lacinia lacus nec mollis suscipit. Pellentesque faucibus a mi eget tincidunt. Nullam facilisis, lectus vitae blandit lacinia, lectus nunc bibendum quam, vel accumsan leo nisi eget nulla. Praesent ac dolor velit. Curabitur libero dui, tincidunt vitae est ac, sodales efficitur odio. Ut venenatis porttitor elit ac aliquet. Mauris euismod faucibus auctor. Vestibulum lacus orci, tempus et enim ut, ornare malesuada urna. Curabitur sit amet risus aliquet, facilisis mi eu, aliquam nibh. Mauris pharetra mattis vehicula."
+		}
+	]
+}
+
+
+var projects = { 
+	"projects" : [
+		{
+			"title": "Charity",
+			"dates": "2019-02-28",
+			"description" : "Website",
+			"images" : ["images/fry.jpg", "images/fry.jpg"]
+		},
+		{
+			"title": "Charity2",
+			"dates": "2020-02-28",
+			"description" : "Website 2",
+			"images" : ["images/fry.jpg", "images/fry.jpg"]
+		}
+	]
+}
 
 
 
-/*
-var text = "audacity";
+var formattedName = HTMLheaderName.replace("%data%", bio.name);
+$("#header").append(formattedName);
 
-var udacityizer = function(string) {
-  // Right now, the variable string === "audacity"
-  // Manipulate string to make it equal to "Udacity"
-  // Your code goes here!
+var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
+$("#header").append(formattedRole);
 
-  firstString = string.slice(1, 2).toUpperCase();
-  string = firstString + string.substr(2);
+var formattedPic = HTMLbioPic.replace("%data%", bio.biopic);
+$("#header").append(formattedPic);
 
-  //string = string.substr(1).toUpperCase();
 
-  return string;
-};
 
-// Did your code work? The line below will tell you!
-console.log(udacityizer(text));
+var formattedMessage = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
+$("#header").append(formattedMessage);
 
-var sampleArray = [0,0,7];
 
-var incrementLastArrayElement = function(_array) {
-    var newArray = [];
-    // Your code should make newArray equal to an array that has the same
-    // values as _array, but the last number has increased by one.
-    
-    // For example:
-    // _array = [1, 2, 3];
-    // turns into:
-    // newArray = [1, 2, 4];
-    
-    // Your code goes in here!
 
-    newArray = _array.slice(0);
 
-    var removeNum = newArray.pop();
+if (bio['skills'].length > 0) {
+	$("#header").append(HTMLskillsStart);
 
-    newArray.push(removeNum + 1);
+	/* OPTION 1
+		//  create variable to store the array of skills
+		var skills = bio['skills'];
+		// Access the values in the array
+		for (var i = 0; i < skills.length; i++) {
+			
+			// format the values 
+			var newSkills = HTMLskills.replace("%data%", skills[i]);
 
-   //	newArray = newArray.push("1");
+			//append skill
+			$('#skills').append(newSkills);
+		} 
+	*/
 
-    // Don't delete this line!
-    return newArray;
-};
+	/* OPTION  2 */
+	// Access the values in the array
+	for (var i = 0; i < bio['skills'].length; i++) {
+		// format the values and replace the %data%
+		var newSkills = HTMLskills.replace("%data%", bio['skills'][i]);
+		//append skill
 
-// Did your code work? The line below will tell you!
-console.log(incrementLastArrayElement(sampleArray));
 
-*/
+
+		$('#skills').append(newSkills);
+	}
+
+	/* OPTION  3 - FOR IN LOOP*/
+	/*
+	for(skill in bio.skills) {
+		var newSkills2 = HTMLskills.replace("%data%", bio.skills[skill]);
+		//append skill
+		$('#skills').append(newSkills2);
+	}
+	*/
+}
+
+if (work['jobs'].length > 0) {
+	for(job in work.jobs) {
+		$("#workExperience").append(HTMLworkStart);
+		var formattedEmployer =  HTMLworkEmployer.replace("%data%",work.jobs[job].employer);
+		var formattedTitle =  HTMLworkTitle.replace("%data%", work.jobs[job].title);
+		var formattedEmployeerTitle =  formattedEmployer + formattedTitle;
+
+		var formattedDates = HTMLworkDates.replace("%data%",work.jobs[job].dates);
+		var formattedLocation = HTMLworkLocation.replace("%data%",work.jobs[job].location);
+		var formattedDescription = HTMLworkDescription.replace("%data%",work.jobs[job].description);
+
+
+
+		//append work
+		$('.work-entry:last').append(formattedEmployeerTitle);
+		$('.work-entry:last').append(formattedDates);
+		$('.work-entry:last').append(formattedLocation);
+		$('.work-entry:last').append( formattedDescription);
+	}
+}
